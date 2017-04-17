@@ -7,8 +7,8 @@
   },
   "keywords": [
     "sweetalert2",
-    "ng",
-    "angular 2"
+    "ngx",
+    "angular"
   ],
   "description": "Sweetalert2 for angular 2 cli application.",
   "main": "index.js",
