@@ -1,5 +1,5 @@
 # ngx-sweetalert2
-Sweetalert2 for angular 2 cli application.
+Sweetalert2 for angular x cli application.
 
 # Install
 `npm i -s ngx-sweetalert2`
