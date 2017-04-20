@@ -1,12 +1,18 @@
 import { Injectable } from "@angular/core";
-import swal from "sweetalert2";
+// import swalxx from "sweetalert2";
+
+let win : any = typeof window !== 'undefined' && window || {};
 
 @Injectable()
 export class SweetAlertService {
   constructor() { }
 
-  swal(args = {}) {
-    return swal(args);
+  // swal(args = {}) {
+  //   return swal(args);
+  // }
+
+  swal(args = {}){
+    return win.Sweetalert2(args);
   }
 
   prompt(options) {
@@ -15,7 +21,7 @@ export class SweetAlertService {
       confirmButtonText: "Submit",
       input: "text"
     };
-    return swal((<any>Object).assign({}, baseOptions, options));
+    return this.swal((<any>Object).assign({}, baseOptions, options));
   }
 
   confirm(options) {
@@ -24,7 +30,7 @@ export class SweetAlertService {
       confirmButtonText: "Confirm",
       type: "warning"
     };
-    return swal((<any>Object).assign(baseOptions, options));
+    return this.swal((<any>Object).assign(baseOptions, options));
   }
 
   alert(options) {
@@ -32,7 +38,7 @@ export class SweetAlertService {
       confirmButtonText: "OK",
       type: "info"
     };
-    return swal((<any>Object).assign(baseOptions, options));
+    return this.swal((<any>Object).assign(baseOptions, options));
   }
 
   question(options) {
