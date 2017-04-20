@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import swal from "sweetalert2/dist/sweetalert2";
+import swal from "sweetalert2";
 
 @Injectable()
 export class SweetAlertService {
