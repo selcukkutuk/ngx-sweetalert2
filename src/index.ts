@@ -1,18 +1,11 @@
 import { Injectable } from "@angular/core";
-// import swalxx from "sweetalert2";
-
-let win : any = typeof window !== 'undefined' && window || {};
+import swal from 'sweetalert2';
 
 @Injectable()
 export class SweetAlertService {
   constructor() { }
-
-  // swal(args = {}) {
-  //   return swal(args);
-  // }
-
-  swal(args = {}){
-    return win.Sweetalert2(args);
+  swal(args = {}) {
+    return swal(args);
   }
 
   prompt(options) {
