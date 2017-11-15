@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SweetAlertService } from 'ngx-sweetalert2';
+import { SweetAlertService } from '../../../index'
 
 @Component({
   selector: 'app-root',
@@ -8,8 +8,9 @@ import { SweetAlertService } from 'ngx-sweetalert2';
   providers: [SweetAlertService]
 })
 export class AppComponent {
+  constructor(private _swal: SweetAlertService) { }
 
-  constructor(public _swal: SweetAlertService) {
+  showAlert() {
     this._swal.info({ title: 'Hi ;)' });
   }
 }
