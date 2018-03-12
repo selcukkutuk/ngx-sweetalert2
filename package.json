@@ -1,15 +1,11 @@
 {
   "name": "ngx-sweetalert2",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "repository": {
     "type": "git",
     "url": "https://github.com/selcukkutuk/ngx-sweetalert2.git"
   },
-  "keywords": [
-    "sweetalert2",
-    "ngx",
-    "angular"
-  ],
+  "keywords": ["sweetalert2", "ngx", "angular"],
   "description": "Sweetalert2 for angular 2 cli application.",
   "main": "index.js",
   "scripts": {
